@@ -24,24 +24,24 @@ cp .env.example .env.production
 Edit `.env.production`:
 
 ```env
-NEXT_PUBLIC_DERIV_APP_ID=your_app_id_here
-NEXT_PUBLIC_DERIV_REDIRECT_URI=https://your-registered-redirect-uri.com
-NEXT_PUBLIC_DERIV_APP_NAME=your_app_name_here
+NEXT_PUBLIC_DERIV_APP_ID= 34prXnxC7mNqlqVevkcPt
+NEXT_PUBLIC_DERIV_REDIRECT_URI=https://derivlegends.com
+NEXT_PUBLIC_DERIV_APP_NAME=legends
 NEXT_PUBLIC_DERIV_SHOW_APP_NAME=true
-NEXT_PUBLIC_DERIV_REFERRAL_LINK=your_referral_link_here
+NEXT_PUBLIC_DERIV_REFERRAL_LINK=https://t.deriv.link?t=FTJAEJJYWADP
 NEXT_PUBLIC_DERIV_OAUTH_SCOPES=trade,account_manage
 NEXT_PUBLIC_DERIV_ENV=production
 ```
 
 | Variable | Description |
 |---|---|
-| `NEXT_PUBLIC_DERIV_APP_ID` | Your Deriv app ID from the App Registration dashboard |
-| `NEXT_PUBLIC_DERIV_REDIRECT_URI` | OAuth redirect URI — must exactly match the URI registered in your Deriv app |
-| `NEXT_PUBLIC_DERIV_APP_NAME` | In-app display name (header, tab title, favicon). Set in App Builder Customise. OAuth/consent registration name is configured separately and is not this env var. |
-| `NEXT_PUBLIC_DERIV_SHOW_APP_NAME` | `true` (default) shows the name next to the logo on desktop; `false` hides it (logo only). Tab title / favicon still use `NEXT_PUBLIC_DERIV_APP_NAME`. |
-| `NEXT_PUBLIC_DERIV_REFERRAL_LINK` | Affiliate referral link shown to unauthenticated users (optional) |
-| `NEXT_PUBLIC_DERIV_OAUTH_SCOPES` | Comma-separated OAuth scopes (e.g. `trade,account_manage`) |
-| `NEXT_PUBLIC_DERIV_ENV` | `production` to connect to the live Deriv endpoint; `preview` for staging |
+| `34prXnxC7mNqlqVevkcPt` | Your Deriv app ID from the App Registration dashboard |
+| `https://derivlegends.com` | OAuth redirect URI — must exactly match the URI registered in your Deriv app |
+| `legends` | In-app display name (header, tab title, favicon). Set in App Builder Customise. OAuth/consent registration name is configured separately and is not this env var. |
+| `derivlegends` | `true` (default) shows the name next to the logo on desktop; `false` hides it (logo only). Tab title / favicon still use `derivlegends`. |
+| `https://t.deriv.link?t=FTJAEJJYWADP` | Affiliate referral link shown to unauthenticated users (optional) |
+| `trade,account_manage` | Comma-separated OAuth scopes (e.g. `trade,account_manage`) |
+| `production` | `production` to connect to the live Deriv endpoint; `preview` for staging |
 
 For local development, copy `.env.production` to `.env.local` — Next.js will load `.env.local` automatically and it takes precedence over `.env.production`.
 
